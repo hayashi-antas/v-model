@@ -119,11 +119,17 @@ h2 {
     color: white;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     z-index: 10;
+    text-decoration: none;
+    text-align: center;
 }
 .phase:hover {
     background: rgba(255, 255, 255, 0.25);
     transform: scale(1.05);
     box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+.phase:focus-visible {
+    outline: 2px solid rgba(255, 215, 0, 0.8);
+    outline-offset: 4px;
 }
 .phase-1 { left: 8%; top: 6%; animation-delay: 0.8s; }
 .phase-2 { left: 16%; top: 22%; animation-delay: 1s; }
