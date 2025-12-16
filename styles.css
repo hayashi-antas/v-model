@@ -136,53 +136,68 @@ h2 {
 .phase-10 { right: 10%; top: 35px; animation-delay: 2.6s; }
 .arrow {
     position: absolute;
-    width: 14px;
-    height: 470px;
+    width: 20px;
+    height: 520px;
     font-size: 0;
     color: transparent;
-    animation: pulse 2s infinite;
     pointer-events: none;
+    --arrow-gradient: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.25) 100%);
 }
 .arrow::before {
     content: "";
     position: absolute;
     left: 50%;
+    top: 0;
+    bottom: 0;
     width: 4px;
-    border-radius: 2px;
-    background: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
     transform: translateX(-50%);
+    background: var(--arrow-gradient);
+    background-size: 100% 220%;
+    background-position: 0 110%;
+    animation: arrowFlow 4s ease-in-out infinite;
 }
 .arrow::after {
     content: "";
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
 }
 .arrow-down {
-    left: 6%;
-    top: 30px;
+    left: auto;
+    right: calc(50% + 30px);
+    top: auto;
+    bottom: 60px;
+    transform: rotate(-40deg);
+    transform-origin: bottom center;
+    --arrow-gradient: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.2) 100%);
 }
 .arrow-down::before {
-    top: 0;
-    bottom: 16px;
+    bottom: 100px;
 }
 .arrow-down::after {
-    bottom: 0;
-    border-top: 14px solid rgba(255, 255, 255, 0.9);
+    bottom: 100px;
+    border-top: 10px solid rgba(255,255,255,0.8);
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
 }
+
 .arrow-up {
-    right: 6%;
-    top: 30px;
+    left: calc(50% + 30px);
+    right: auto;
+    bottom: 60px;
+    transform: rotate(40deg);
+    transform-origin: bottom center;
+    --arrow-gradient: linear-gradient(to top, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.2) 100%);
 }
 .arrow-up::before {
-    top: 16px;
-    bottom: 0;
+    top: 18px;
 }
 .arrow-up::after {
-    top: 0;
-    border-bottom: 14px solid rgba(255, 255, 255, 0.9);
+    top: -2px;
+    border-bottom: 14px solid rgba(255, 255, 255, 0.8);
 }
 .content-box {
     background: rgba(255, 255, 255, 0.1);
@@ -321,14 +336,18 @@ h2 {
         transform: scaleX(1);
     }
 }
-@keyframes pulse {
-    0%, 100% {
-        opacity: 0.6;
-        transform: scale(1);
+@keyframes arrowFlow {
+    0% {
+        background-position: 0 120%;
+        opacity: 0.45;
     }
     50% {
-        opacity: 1;
-        transform: scale(1.2);
+        background-position: 0 0;
+        opacity: 0.95;
+    }
+    100% {
+        background-position: 0 120%;
+        opacity: 0.45;
     }
 }
 .list-item {
