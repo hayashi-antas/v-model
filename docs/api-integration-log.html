@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API/連携テスト結果ログ | V字モデル成果物ガイド</title>
+    <link rel="stylesheet" href="doc-styles.css">
+</head>
+<body>
+    <main class="doc">
+        <a class="doc__back" href="../v_model.html">V字モデルへ戻る</a>
+        <h1>API/連携テスト結果ログ</h1>
+        <p class="doc__lead">API連携テストで取得したリクエスト/レスポンスや証跡をまとめたログです。</p>
+        <section>
+            <h2>目的</h2>
+            <p>通信エラーやデータ不整合を迅速に切り分け、連携先と共有できる証跡を残します。</p>
+        </section>
+        <section>
+            <h2>主な内容</h2>
+            <ul>
+                <li>テストケースIDごとのペイロード</li>
+                <li>レスポンス例・ヘッダー・遅延時間</li>
+                <li>トレースIDや相手システムへの連絡履歴</li>
+            </ul>
+        </section>
+        <section>
+            <h2>活用ポイント</h2>
+            <ul>
+                <li>秘匿情報をマスキングし、安全に共有</li>
+                <li>トレースIDをログ基盤と突き合わせられるよう統一</li>
+                <li>長期保存が必要なケースはアーカイブポリシーを決める</li>
+            </ul>
+            <span class="badge">工程: 結合テスト</span>
+        </section>
+    </main>
+</body>
+</html>

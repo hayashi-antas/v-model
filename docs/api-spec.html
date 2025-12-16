@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API仕様書(Swagger等) | V字モデル成果物ガイド</title>
+    <link rel="stylesheet" href="doc-styles.css">
+</head>
+<body>
+    <main class="doc">
+        <a class="doc__back" href="../v_model.html">V字モデルへ戻る</a>
+        <h1>API仕様書(Swagger等)</h1>
+        <p class="doc__lead">REST/GraphQL などのエンドポイント情報を定義し、クライアントとサーバの契約を明文化します。</p>
+        <section>
+            <h2>目的</h2>
+            <p>フィールドやエラーレスポンスを正確に共有し、並行開発や自動テストを容易にします。</p>
+        </section>
+        <section>
+            <h2>主な内容</h2>
+            <ul>
+                <li>エンドポイントURI、HTTPメソッド、認証条件</li>
+                <li>リクエスト/レスポンスのスキーマ、例</li>
+                <li>ステータスコード、エラーコード、再試行ルール</li>
+            </ul>
+        </section>
+        <section>
+            <h2>活用ポイント</h2>
+            <ul>
+                <li>OpenAPIなど機械可読な形式で管理し、ドキュメント生成を自動化</li>
+                <li>バージョンポリシーと互換性方針を明記</li>
+                <li>モックサーバやSDK生成と連動させ、利用者の導入コストを下げる</li>
+            </ul>
+            <span class="badge">工程: 詳細設計</span>
+        </section>
+    </main>
+</body>
+</html>

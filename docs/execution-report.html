@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>実行結果レポート(自動) | V字モデル成果物ガイド</title>
+    <link rel="stylesheet" href="doc-styles.css">
+</head>
+<body>
+    <main class="doc">
+        <a class="doc__back" href="../v_model.html">V字モデルへ戻る</a>
+        <h1>実行結果レポート(自動)</h1>
+        <p class="doc__lead">CIが生成する自動テスト結果を整形し、失敗ケースの詳細をまとめたレポートです。</p>
+        <section>
+            <h2>目的</h2>
+            <p>ビルドごとの品質状態を素早く共有し、失敗への初動を加速させます。</p>
+        </section>
+        <section>
+            <h2>主な内容</h2>
+            <ul>
+                <li>実行日時、環境、コミットID</li>
+                <li>成功/失敗件数、エラー詳細、ログリンク</li>
+                <li>履歴推移グラフや回帰分析</li>
+            </ul>
+        </section>
+        <section>
+            <h2>活用ポイント</h2>
+            <ul>
+                <li>Slack等へ自動配信し、関係者が即座に把握</li>
+                <li>失敗時の担当自動アサインを設定</li>
+                <li>保留・再実行コメントを追記できるようにする</li>
+            </ul>
+            <span class="badge">工程: 単体テスト</span>
+        </section>
+    </main>
+</body>
+</html>

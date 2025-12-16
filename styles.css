@@ -433,6 +433,7 @@ h2 {
     gap: 8px;
 }
 .doc-item {
+    display: block;
     font-size: 0.85em;
     font-weight: 400;
     padding: 8px 15px 8px 28px;
@@ -442,6 +443,7 @@ h2 {
     transition: all 0.25s ease;
     color: rgba(255, 255, 255, 0.9);
     position: relative;
+    text-decoration: none;
 }
 .doc-item:before {
     content: "●";
@@ -459,4 +461,8 @@ h2 {
     transform: translateX(6px);
     color: #fff;
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+.doc-item:focus-visible {
+    outline: 2px solid #ffd700;
+    outline-offset: 4px;
 }

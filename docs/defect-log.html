@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不具合管理表 | V字モデル成果物ガイド</title>
+    <link rel="stylesheet" href="doc-styles.css">
+</head>
+<body>
+    <main class="doc">
+        <a class="doc__back" href="../v_model.html">V字モデルへ戻る</a>
+        <h1>不具合管理表</h1>
+        <p class="doc__lead">テストで検出した不具合のライフサイクルを追跡するログです。</p>
+        <section>
+            <h2>目的</h2>
+            <p>修正状況と優先度を把握し、リリース判断の材料にします。</p>
+        </section>
+        <section>
+            <h2>主な内容</h2>
+            <ul>
+                <li>障害ID、発生日、環境</li>
+                <li>再現手順、影響範囲、優先度</li>
+                <li>対応担当者、ステータス、完了確認</li>
+            </ul>
+        </section>
+        <section>
+            <h2>活用ポイント</h2>
+            <ul>
+                <li>グラフ化して日次報告できるようにする</li>
+                <li>重複バグを避けるため検索性を高める</li>
+                <li>根本原因や再発防止策も必ず記録</li>
+            </ul>
+            <span class="badge">工程: 結合テスト</span>
+        </section>
+    </main>
+</body>
+</html>
