@@ -74,35 +74,35 @@ h2 {
 /* 左側の大きな斜め線（上から下へ） */
 .left-main-line {
     width: 4px;
-    height: 480px;
-    left: 20%;
-    top: 35px;
+    height: 500px;
+    left: 25%;
+    top: 40px;
     transform-origin: top center;
-    transform: rotate(20deg);
+    transform: rotate(40deg);
     animation: drawMainLine 1s ease-out 0.5s both;
 }
 /* 右側の大きな斜め線（下から上へ） */
 .right-main-line {
     width: 4px;
-    height: 480px;
-    right: 20%;
-    top: 35px;
+    height: 500px;
+    right: 25%;
+    top: 40px;
     transform-origin: top center;
-    transform: rotate(-20deg);
+    transform: rotate(-40deg);
     animation: drawMainLine 1s ease-out 0.5s both;
 }
 /* 横の接続線（左側 - 中央まで伸ばす） */
-.connect-left-1 { width: 200px; height: 3px; left: 13%; top: 40px; animation: drawLineHorizontal 0.3s ease-out 1.5s both; }
-.connect-left-2 { width: 220px; height: 3px; left: 19%; top: 145px; animation: drawLineHorizontal 0.3s ease-out 1.6s both; }
-.connect-left-3 { width: 240px; height: 3px; left: 25%; top: 250px; animation: drawLineHorizontal 0.3s ease-out 1.7s both; }
-.connect-left-4 { width: 260px; height: 3px; left: 31%; top: 355px; animation: drawLineHorizontal 0.3s ease-out 1.8s both; }
-.connect-left-5 { width: 280px; height: 3px; left: 36%; top: 460px; animation: drawLineHorizontal 0.3s ease-out 1.9s both; }
+.connect-left-1 { width: 28%; height: 3px; left: 22%; top: 50px; animation: drawLineHorizontal 0.3s ease-out 1.5s both; }
+.connect-left-2 { width: 24%; height: 3px; left: 26%; top: 150px; animation: drawLineHorizontal 0.3s ease-out 1.6s both; }
+.connect-left-3 { width: 20%; height: 3px; left: 30%; top: 250px; animation: drawLineHorizontal 0.3s ease-out 1.7s both; }
+.connect-left-4 { width: 16%; height: 3px; left: 34%; top: 350px; animation: drawLineHorizontal 0.3s ease-out 1.8s both; }
+.connect-left-5 { width: 12%; height: 3px; left: 38%; top: 450px; animation: drawLineHorizontal 0.3s ease-out 1.9s both; }
 /* 横の接続線（右側 - 中央まで伸ばす） */
-.connect-right-1 { width: 280px; height: 3px; right: 36%; top: 460px; animation: drawLineHorizontal 0.3s ease-out 2s both; }
-.connect-right-2 { width: 260px; height: 3px; right: 31%; top: 355px; animation: drawLineHorizontal 0.3s ease-out 2.1s both; }
-.connect-right-3 { width: 240px; height: 3px; right: 25%; top: 250px; animation: drawLineHorizontal 0.3s ease-out 2.2s both; }
-.connect-right-4 { width: 220px; height: 3px; right: 19%; top: 145px; animation: drawLineHorizontal 0.3s ease-out 2.3s both; }
-.connect-right-5 { width: 200px; height: 3px; right: 13%; top: 40px; animation: drawLineHorizontal 0.3s ease-out 2.4s both; }
+.connect-right-1 { width: 12%; height: 3px; right: 38%; top: 450px; animation: drawLineHorizontal 0.3s ease-out 2s both; }
+.connect-right-2 { width: 16%; height: 3px; right: 34%; top: 350px; animation: drawLineHorizontal 0.3s ease-out 2.1s both; }
+.connect-right-3 { width: 20%; height: 3px; right: 30%; top: 250px; animation: drawLineHorizontal 0.3s ease-out 2.2s both; }
+.connect-right-4 { width: 24%; height: 3px; right: 26%; top: 150px; animation: drawLineHorizontal 0.3s ease-out 2.3s both; }
+.connect-right-5 { width: 28%; height: 3px; right: 22%; top: 50px; animation: drawLineHorizontal 0.3s ease-out 2.4s both; }
 .phase {
     position: absolute;
     padding: 14px 22px;
@@ -125,16 +125,16 @@ h2 {
     transform: scale(1.05);
     box-shadow: 0 8px 25px rgba(0,0,0,0.3);
 }
-.phase-1 { left: 5%; top: 25px; animation-delay: 0.8s; }
-.phase-2 { left: 11%; top: 130px; animation-delay: 1s; }
-.phase-3 { left: 17%; top: 235px; animation-delay: 1.2s; }
-.phase-4 { left: 23%; top: 340px; animation-delay: 1.4s; }
-.phase-5 { left: 29%; top: 445px; animation-delay: 1.6s; }
-.phase-6 { right: 29%; top: 445px; animation-delay: 1.8s; }
-.phase-7 { right: 23%; top: 340px; animation-delay: 2s; }
-.phase-8 { right: 17%; top: 235px; animation-delay: 2.2s; }
-.phase-9 { right: 11%; top: 130px; animation-delay: 2.4s; }
-.phase-10 { right: 5%; top: 25px; animation-delay: 2.6s; }
+.phase-1 { left: 18%; top: 25px; animation-delay: 0.8s; }
+.phase-2 { left: 22%; top: 130px; animation-delay: 1s; }
+.phase-3 { left: 26%; top: 235px; animation-delay: 1.2s; }
+.phase-4 { left: 30%; top: 340px; animation-delay: 1.4s; }
+.phase-5 { left: 34%; top: 445px; animation-delay: 1.6s; }
+.phase-6 { right: 34%; top: 445px; animation-delay: 1.8s; }
+.phase-7 { right: 30%; top: 340px; animation-delay: 2s; }
+.phase-8 { right: 26%; top: 235px; animation-delay: 2.2s; }
+.phase-9 { right: 22%; top: 130px; animation-delay: 2.4s; }
+.phase-10 { right: 18%; top: 25px; animation-delay: 2.6s; }
 .arrow {
     position: absolute;
     font-size: 2.5em;
