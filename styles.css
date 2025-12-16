@@ -62,9 +62,10 @@ h2 {
 .v-diagram {
     width: 90%;
     max-width: 1200px;
-    height: 600px;
+    height: clamp(360px, 60vw, 620px);
     position: relative;
     margin: 40px auto;
+    --center-offset: clamp(24px, 3.5vw, 50px);
 }
 .v-line {
     position: absolute;
@@ -75,9 +76,9 @@ h2 {
 .left-main-line,
 .right-main-line {
     width: 4px;
-    height: 540px;
+    height: calc(100% - 8%);
     top: auto;
-    bottom: 30px;
+    bottom: 4%;
     left: calc(50% - 2px);
     transform-origin: bottom center;
     animation: drawMainLine 1s ease-out 0.5s both;
@@ -91,17 +92,17 @@ h2 {
     transform: rotate(40deg);
 }
 /* 横の接続線（左側 - 中央から左へ伸ばす） */
-.connect-left-1 { width: 40%; height: 3px; right: 50%; top: 70px; transform-origin: right center; animation: drawLineHorizontal 0.3s ease-out 1.5s both; }
-.connect-left-2 { width: 32%; height: 3px; right: 50%; top: 165px; transform-origin: right center; animation: drawLineHorizontal 0.3s ease-out 1.6s both; }
-.connect-left-3 { width: 24%; height: 3px; right: 50%; top: 260px; transform-origin: right center; animation: drawLineHorizontal 0.3s ease-out 1.7s both; }
-.connect-left-4 { width: 18%; height: 3px; right: 50%; top: 355px; transform-origin: right center; animation: drawLineHorizontal 0.3s ease-out 1.8s both; }
-.connect-left-5 { width: 12%; height: 3px; right: 50%; top: 450px; transform-origin: right center; animation: drawLineHorizontal 0.3s ease-out 1.9s both; }
+.connect-left-1 { width: 40%; height: 3px; right: 50%; top: 12%; transform-origin: right center; animation: drawLineHorizontal 0.3s ease-out 1.5s both; }
+.connect-left-2 { width: 32%; height: 3px; right: 50%; top: 28%; transform-origin: right center; animation: drawLineHorizontal 0.3s ease-out 1.6s both; }
+.connect-left-3 { width: 24%; height: 3px; right: 50%; top: 44%; transform-origin: right center; animation: drawLineHorizontal 0.3s ease-out 1.7s both; }
+.connect-left-4 { width: 18%; height: 3px; right: 50%; top: 60%; transform-origin: right center; animation: drawLineHorizontal 0.3s ease-out 1.8s both; }
+.connect-left-5 { width: 12%; height: 3px; right: 50%; top: 76%; transform-origin: right center; animation: drawLineHorizontal 0.3s ease-out 1.9s both; }
 /* 横の接続線（右側 - 中央から右へ伸ばす） */
-.connect-right-1 { width: 12%; height: 3px; left: 50%; top: 450px; transform-origin: left center; animation: drawLineHorizontal 0.3s ease-out 2s both; }
-.connect-right-2 { width: 18%; height: 3px; left: 50%; top: 355px; transform-origin: left center; animation: drawLineHorizontal 0.3s ease-out 2.1s both; }
-.connect-right-3 { width: 24%; height: 3px; left: 50%; top: 260px; transform-origin: left center; animation: drawLineHorizontal 0.3s ease-out 2.2s both; }
-.connect-right-4 { width: 32%; height: 3px; left: 50%; top: 165px; transform-origin: left center; animation: drawLineHorizontal 0.3s ease-out 2.3s both; }
-.connect-right-5 { width: 40%; height: 3px; left: 50%; top: 70px; transform-origin: left center; animation: drawLineHorizontal 0.3s ease-out 2.4s both; }
+.connect-right-1 { width: 12%; height: 3px; left: 50%; top: 76%; transform-origin: left center; animation: drawLineHorizontal 0.3s ease-out 2s both; }
+.connect-right-2 { width: 18%; height: 3px; left: 50%; top: 60%; transform-origin: left center; animation: drawLineHorizontal 0.3s ease-out 2.1s both; }
+.connect-right-3 { width: 24%; height: 3px; left: 50%; top: 44%; transform-origin: left center; animation: drawLineHorizontal 0.3s ease-out 2.2s both; }
+.connect-right-4 { width: 32%; height: 3px; left: 50%; top: 28%; transform-origin: left center; animation: drawLineHorizontal 0.3s ease-out 2.3s both; }
+.connect-right-5 { width: 40%; height: 3px; left: 50%; top: 12%; transform-origin: left center; animation: drawLineHorizontal 0.3s ease-out 2.4s both; }
 .phase {
     position: absolute;
     padding: 14px 22px;
@@ -124,20 +125,20 @@ h2 {
     transform: scale(1.05);
     box-shadow: 0 8px 25px rgba(0,0,0,0.3);
 }
-.phase-1 { left: 10%; top: 35px; animation-delay: 0.8s; }
-.phase-2 { left: 18%; top: 135px; animation-delay: 1s; }
-.phase-3 { left: 26%; top: 235px; animation-delay: 1.2s; }
-.phase-4 { left: 32%; top: 335px; animation-delay: 1.4s; }
-.phase-5 { left: 38%; top: 435px; animation-delay: 1.6s; }
-.phase-6 { right: 38%; top: 435px; animation-delay: 1.8s; }
-.phase-7 { right: 32%; top: 335px; animation-delay: 2s; }
-.phase-8 { right: 26%; top: 235px; animation-delay: 2.2s; }
-.phase-9 { right: 18%; top: 135px; animation-delay: 2.4s; }
-.phase-10 { right: 10%; top: 35px; animation-delay: 2.6s; }
+.phase-1 { left: 8%; top: 6%; animation-delay: 0.8s; }
+.phase-2 { left: 16%; top: 22%; animation-delay: 1s; }
+.phase-3 { left: 24%; top: 38%; animation-delay: 1.2s; }
+.phase-4 { left: 30%; top: 54%; animation-delay: 1.4s; }
+.phase-5 { left: 36%; top: 70%; animation-delay: 1.6s; }
+.phase-6 { right: 36%; top: 70%; animation-delay: 1.8s; }
+.phase-7 { right: 30%; top: 54%; animation-delay: 2s; }
+.phase-8 { right: 24%; top: 38%; animation-delay: 2.2s; }
+.phase-9 { right: 16%; top: 22%; animation-delay: 2.4s; }
+.phase-10 { right: 8%; top: 6%; animation-delay: 2.6s; }
 .arrow {
     position: absolute;
     width: 20px;
-    height: 520px;
+    height: 88%;
     font-size: 0;
     color: transparent;
     pointer-events: none;
@@ -167,33 +168,33 @@ h2 {
 }
 .arrow-down {
     left: auto;
-    right: calc(50% + 30px);
+    right: calc(50% + var(--center-offset));
     top: auto;
-    bottom: 60px;
+    bottom: clamp(40px, 8vh, 80px);
     transform: rotate(-40deg);
     transform-origin: bottom center;
     --arrow-gradient: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.2) 100%);
 }
 .arrow-down::before {
-    bottom: 100px;
+    bottom: 0%;
 }
 .arrow-down::after {
-    bottom: 100px;
+    bottom: 0%;
     border-top: 10px solid rgba(255,255,255,0.8);
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
 }
 
 .arrow-up {
-    left: calc(50% + 30px);
+    left: calc(50% + var(--center-offset));
     right: auto;
-    bottom: 60px;
+    bottom: clamp(40px, 8vh, 80px);
     transform: rotate(40deg);
     transform-origin: bottom center;
     --arrow-gradient: linear-gradient(to top, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.2) 100%);
 }
 .arrow-up::before {
-    top: 18px;
+    top: 3%;
 }
 .arrow-up::after {
     top: -2px;
@@ -325,7 +326,7 @@ h2 {
         height: 0;
     }
     to {
-        height: 540px;
+        height: calc(100% - 8%);
     }
 }
 @keyframes drawLineHorizontal {
