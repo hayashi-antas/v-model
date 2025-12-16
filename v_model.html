@@ -9,14 +9,8 @@
 </head>
 <body>
     <div class="slides">
-        <!-- Slide 1: Title -->
+        <!-- Slide 1: V-Diagram -->
         <div class="slide active">
-            <h1>V字モデル</h1>
-            <p class="subtitle">ソフトウェア開発ライフサイクルの体系的アプローチ</p>
-        </div>
-
-        <!-- Slide 2: V-Diagram -->
-        <div class="slide">
             <h2>V字モデルの構造</h2>
             <div class="v-diagram">
                 <!-- 左側のメイン斜め線 -->
@@ -55,7 +49,7 @@
             </div>
         </div>
 
-        <!-- Slide 3: Benefits -->
+        <!-- Slide 2: Benefits -->
         <div class="slide">
             <h2>V字モデルの利点</h2>
             <div class="benefits-grid">
@@ -82,7 +76,7 @@
             </div>
         </div>
 
-        <!-- Slide 4: Key Principles -->
+        <!-- Slide 3: Key Principles -->
         <div class="slide">
             <h2>V字モデルの主要原則</h2>
             <div class="content-box">
@@ -94,7 +88,7 @@
             </div>
         </div>
 
-        <!-- Slide 5: Documents -->
+        <!-- Slide 4: Documents -->
         <div class="slide">
             <h2>各工程で作成される成果物</h2>
             <div class="documents-container">
@@ -104,34 +98,34 @@
                         <div class="doc-phase">要求分析・要件定義</div>
                         <div class="doc-list">
                             <span class="doc-item">要件定義書</span>
-                            <span class="doc-item">要求仕様書</span>
+                            <span class="doc-item">非機能要件定義書</span>
                             <span class="doc-item">業務フロー図</span>
                         </div>
                     </div>
                     <div class="doc-card">
-                        <div class="doc-phase">基本設計</div>
+                        <div class="doc-phase">基本設計 (外部設計)</div>
                         <div class="doc-list">
                             <span class="doc-item">基本設計書</span>
-                            <span class="doc-item">システム構成図</span>
-                            <span class="doc-item">ER図</span>
+                            <span class="doc-item">システム構成図/ER図</span>
+                            <span class="doc-item">外部I/F設計書</span>
                             <span class="doc-item">画面遷移図</span>
                         </div>
                     </div>
                     <div class="doc-card">
-                        <div class="doc-phase">詳細設計</div>
+                        <div class="doc-phase">詳細設計 (内部設計)</div>
                         <div class="doc-list">
                             <span class="doc-item">詳細設計書</span>
-                            <span class="doc-item">クラス図</span>
-                            <span class="doc-item">シーケンス図</span>
+                            <span class="doc-item">API仕様書(Swagger等)</span>
+                            <span class="doc-item">クラス図/シーケンス図</span>
                             <span class="doc-item">テーブル定義書</span>
                         </div>
                     </div>
                     <div class="doc-card">
                         <div class="doc-phase">実装・コーディング</div>
                         <div class="doc-list">
-                            <span class="doc-item">ソースコード</span>
-                            <span class="doc-item">コーディング規約</span>
-                            <span class="doc-item">プログラム仕様書</span>
+                            <span class="doc-item">プロダクトコード</span>
+                            <span class="doc-item">単体テストコード</span>
+                            <span class="doc-item">静的解析レポート</span>
                         </div>
                     </div>
                 </div>
@@ -141,33 +135,32 @@
                     <div class="doc-card">
                         <div class="doc-phase">コードレビュー</div>
                         <div class="doc-list">
-                            <span class="doc-item">レビュー記録</span>
-                            <span class="doc-item">指摘事項一覧</span>
-                            <span class="doc-item">改修報告書</span>
+                            <span class="doc-item">レビュー議事録(ログ)</span>
+                            <span class="doc-item">指摘対応管理表</span>
                         </div>
                     </div>
                     <div class="doc-card">
                         <div class="doc-phase">単体テスト</div>
                         <div class="doc-list">
-                            <span class="doc-item">単体テスト仕様書</span>
-                            <span class="doc-item">テストケース</span>
-                            <span class="doc-item">テスト結果報告書</span>
+                            <span class="doc-item">単体テスト仕様書/コード</span>
+                            <span class="doc-item">実行結果レポート(自動)</span>
+                            <span class="doc-item">カバレッジレポート</span>
                         </div>
                     </div>
                     <div class="doc-card">
                         <div class="doc-phase">結合テスト</div>
                         <div class="doc-list">
                             <span class="doc-item">結合テスト仕様書</span>
-                            <span class="doc-item">テストシナリオ</span>
                             <span class="doc-item">不具合管理表</span>
+                            <span class="doc-item">API/連携テスト結果ログ</span>
                         </div>
                     </div>
                     <div class="doc-card">
                         <div class="doc-phase">システムテスト</div>
                         <div class="doc-list">
                             <span class="doc-item">システムテスト仕様書</span>
-                            <span class="doc-item">性能テスト結果</span>
-                            <span class="doc-item">セキュリティ診断書</span>
+                            <span class="doc-item">性能/セキュリティ報告書</span>
+                            <span class="doc-item">操作マニュアル/運用手順書</span>
                         </div>
                     </div>
                     <div class="doc-card">
@@ -175,7 +168,7 @@
                         <div class="doc-list">
                             <span class="doc-item">受入テスト仕様書</span>
                             <span class="doc-item">UAT結果報告書</span>
-                            <span class="doc-item">受入判定書</span>
+                            <span class="doc-item">検収書(受入判定書)</span>
                         </div>
                     </div>
                 </div>
@@ -188,7 +181,6 @@
         <div class="dot" onclick="goToSlide(1)"></div>
         <div class="dot" onclick="goToSlide(2)"></div>
         <div class="dot" onclick="goToSlide(3)"></div>
-        <div class="dot" onclick="goToSlide(4)"></div>
     </div>
 
     <div class="navigation">
