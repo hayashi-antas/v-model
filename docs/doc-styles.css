@@ -28,6 +28,8 @@ main.doc {
     padding: clamp(24px, 5vw, 48px);
     box-shadow: 0 40px 80px rgba(0,0,0,0.35);
     backdrop-filter: blur(6px);
+    position: relative;
+    z-index: 1;
 }
 .doc__back {
     display: inline-flex;

@@ -15,7 +15,6 @@
 }
 
 body > :not(.wave-bg):not(.wave-controls) {
-    position: relative;
     z-index: 1;
 }
 

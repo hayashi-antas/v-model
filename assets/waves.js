@@ -57,9 +57,6 @@
             </div>
             <input id="wave-light" type="range" min="0" max="100" value="55">
 
-            <div class="wave-controls__hint">
-                Subtle motion mirrors the V字の流れ。値はローカルに保存されます。
-            </div>
         `;
         document.body.appendChild(controls);
         return { canvas, controls };
